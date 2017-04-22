@@ -8,7 +8,8 @@ use App\Http\Controllers\Controller;
 class SiteController extends Controller
 {
     public function index(){
-        return "Ola";
+        $teste = 123;
+        return view('site.teste', ['teste'=> $teste]);
     }
 
     public function contato(){
